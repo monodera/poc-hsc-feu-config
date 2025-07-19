@@ -47,3 +47,27 @@ plugins:
 #### 注意点
 - `Date Begin` および `Date End` で、空欄のところは、`" "` としておく。 なにも記載しないと `nan` と表示される。
 - `"N/A"` という文字列はCSVファイルを読み込むときに `nan` として扱われるので、`" N/A"` などとしておく。
+
+
+### 日付からフィルターセットを取得する
+
+```console
+# python3 ./scripts/fetch_hsc_feu_config.py 2025-07-08
+# or
+$ uv run scripts/fetch_hsc_feu_config.py 2025-07-08
+Fetching configuration for date: 2025-07-08
+From URL: https://www.naoj.org/staff/monodera/hsc_feu_config/hsc_feu_configuration.csv
+
+Successfully fetched 99 configuration entries.
+
+HSC FEU Configuration:
+==============================
+Date Begin  : 2025-07-08
+Date End    : N/A
+Opt-Top     : HSC-r2
+Opt-Mid     : NB816
+Opt_Bot     : EB-gri
+IR-Top      : HSC-g
+IR-Mid      : HSC-z
+IR-Bot      : HSC-i2
+```

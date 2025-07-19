@@ -1,8 +1,14 @@
 ## HSC FEU Configuration ページの改定案
 
+西澤さんとのメールのやりとりをみて、FEUの情報をCSVファイルにしておいて、MkDocsではそれを単に読み込んで表として表示すれば、CSVファイルを取得してプログラマティックにどのスロットにフィルターが入っているかを取得できるのでよいのではないかと考えた。MkDocsで利用可能な `mkdocs-table-reader-plugin` というプラグインがあるので、これを利用して、CSVファイルを読み込んで表示するようにする。
+
+### サンプル
+
+https://www.naoj.org/staff/monodera/hsc_feu_config/
+
 ### mkdocs-table-reader-plugin のインストール
 
-村松さん等を通して、[mkdocs-table-reader-plugin](https://timvink.github.io/mkdocs-table-reader-plugin/) パッケージをインストールしてもらう
+村松さんなど (subaru-web-help@nao.ac.jp) を通して、[mkdocs-table-reader-plugin](https://timvink.github.io/mkdocs-table-reader-plugin/) パッケージをインストールしてもらう
 
 ### mkdocs.yml の編集
 
